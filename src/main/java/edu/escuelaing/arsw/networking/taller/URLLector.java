@@ -1,4 +1,4 @@
-package edu.escuelaing.arsw.networking;
+package edu.escuelaing.arsw.networking.taller;
 
 import java.net.MalformedURLException;
 import java.net.URL;

@@ -18,7 +18,7 @@ public class HttpServer {
         return _instance;
     }
 
-    public static void start(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException {
         ServerSocket serverSocket = null;
         try {
             serverSocket = new ServerSocket(35000);
@@ -68,6 +68,7 @@ public class HttpServer {
                     + "</html>" + inputLine;
 
             out.println(outputLine);
+
             while ((inputLine = in.readLine()) != null) {
 
             }

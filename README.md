@@ -1,6 +1,6 @@
-# Segundo taller de ARSW
+# Tercer taller de ARSW
 
-Un aplicativo simple que calcula el promedio y la desviacion estandar de un conjunto de valores dado en un archivo de texto
+Creacion de un servidor web en Java
 
 ## Preparacion
 
@@ -51,20 +51,20 @@ mvn test
 ```
 
 Como muestra la consola:
-![](https://github.com/ronis97/ARSWT2/blob/master/img/Pruebas.JPG)
+![]()
 
 ### JAVADOC
 
 La documentacion del aplicativo se puede ver directamente en el archivo `index.html` encontrado en la carpeta resources/apidocs.
 
-![](https://github.com/ronis97/ARSWT2/blob/master/img/javadoc.JPG)
+![]()
 
 
 ### Diagrama de clases
 
 El diagrama completo se puede encontrar en el archivo `Taller2ARSW.asta` 
 
-![](https://github.com/ronis97/ARSWT2/blob/master/img/DiagramaClases.png)
+![]()
 
 
 
@@ -77,5 +77,6 @@ El diagrama completo se puede encontrar en el archivo `Taller2ARSW.asta`
 ## License
 
 Este proyecto esta bajo la licencia [GNU General Public License v2.0](https://github.com/ronis97/ARSW-T1/blob/master/LICENSE) de uso libre. 
+
 
 

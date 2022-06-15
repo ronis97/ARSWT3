@@ -1,4 +1,4 @@
-package edu.escuelaing.arsw.networking;
+package edu.escuelaing.arsw.networking.taller;
 
 import java.io.BufferedReader;
 import java.io.IOException;
