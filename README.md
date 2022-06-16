@@ -7,7 +7,7 @@ Creacion de un servidor web en Java
 Clonamos el repositorio con la siguiente instrucción en consola:
 
 ```
-https://github.com/ronis97/ARSWT2.git
+https://github.com/ronis97/ARSWT3.git
 ```
 
 
@@ -32,32 +32,17 @@ con esto maven se encargara de descargar todos los recursos necesarios para la e
 Para ejecutar el programa simplemente corremos la instrucción:
 
 ```
-mvn exec:java -Dexec.mainClass="edu.escuelaing.arsw.app.taller2.app.Taller.LoadFile" -Dexec.args="src/main/resources/columna2.txt"
+mvn exec:java -Dexec.mainClass="edu.escuelaing.arsw.app.networking.webServer.WebServer" -Dexec.args=""
 ```
 
-En consola veremos en primera linea el promedio y la segunda linea la desviacion estandar, podemos hacer lo mismo para la otra columna de datos solicitada:
+En el navegador entramos con la dirección:
 
 ```
-mvn exec:java -Dexec.mainClass="edu.escuelaing.arsw.app.taller2.app.Taller.LoadFile" -Dexec.args="src/main/resources/columna1.txt"
+http://127.0.0.1:35000
 ```
 
 
-## Pruebas
 
-Para verificar las pruebas simplemente corremos el comando:
-
-```
-mvn test
-```
-
-Como muestra la consola:
-![]()
-
-### JAVADOC
-
-La documentacion del aplicativo se puede ver directamente en el archivo `index.html` encontrado en la carpeta resources/apidocs.
-
-![]()
 
 
 ### Diagrama de clases

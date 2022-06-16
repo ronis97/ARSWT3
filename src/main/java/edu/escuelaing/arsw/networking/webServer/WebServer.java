@@ -29,14 +29,26 @@ public class WebServer {
             BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
 
             String inputLine, outputLine;
+            String path = "";
+            int count = 0;
             while ((inputLine = in.readLine()) != null) {
                 System.out.println("Receive: " + inputLine);
                 if (!in.ready()) break;
+                count++;
+                if (count <= 1) path = inputLine;
             }
-            outputLine = "HTTP/1.1 200 OK\r\n"
-                    + "Content-Type: text/html\r\n"
-                    + "\r\n";
-            outputLine += LoaderFiles.LoadFile(new File("resources/index.html"));
+            System.out.println(path);
+            if (path.contains("css")){
+                outputLine = outputLine = "HTTP/1.1 200 OK\r\n"
+                        + "Content-Type: text/css\r\n";
+                outputLine += LoaderFiles.LoadFile(new File("resources/index.html"));
+            }
+            else {
+                outputLine = "HTTP/1.1 200 OK\r\n"
+                        + "Content-Type: text/html\r\n"
+                        //                   + "Content-Type: text/css\r\n"
+                        + "\r\n";
+                outputLine += LoaderFiles.LoadFile(new File("resources/index.html"));
 //            outputLine = "HTTP/1.1 200 OK\r\n"
 //                    + "Content-Type: text/html\r\n"
 //                    + "\r\n"
@@ -50,8 +62,9 @@ public class WebServer {
 //                    + "<img src=\"https://i0.wp.com/hipertextual.com/wp-content/uploads/2016/03/Clash-Royale.jpg\">"
 //                    + "</body>"
 //                    + "</html>" + inputLine;
-            outputLine += inputLine;
-            System.out.println(outputLine);
+                //outputLine += inputLine;
+            }
+            //System.out.println(outputLine);
             out.println(outputLine);
             out.close();
             in.close();
